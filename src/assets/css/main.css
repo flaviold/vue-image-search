@@ -1,0 +1,41 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+.bg-gradient {
+  background: linear-gradient(to right,#007bce,#27ff68);
+}
+
+.pg-btn {
+  @apply p-2;
+  @apply rounded;
+  @apply text-lg;
+}
+
+.pg-btn-disabled {
+  @apply opacity-50;
+  @apply cursor-not-allowed;
+}
+
+.pg-btn-blue {
+  @apply text-white;
+  @apply bg-blue;
+  @apply border-blue-dark;
+}
+
+.pg-spacer {
+  @apply pg-btn;
+  @apply cursor-default;
+}
+
+.pg-btn:hover {
+  @apply bg-blue-light;
+}
+
+.pg-active {
+  @apply bg-blue-dark !important;
+}
+
+.pages {
+  display: inline;
+}
